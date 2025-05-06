@@ -8,8 +8,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-@EnableDiscoveryClient
-@EnableFeignClients
+ @EnableDiscoveryClient
+ 
+@EnableFeignClients(basePackages = "com.ecommerce.QuickCarts.AuthService.FeignClient")
 public class QuickCartAuthserviceApplication {
 
 	public static void main(String[] args) {
